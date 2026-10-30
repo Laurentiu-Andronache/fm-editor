@@ -2,6 +2,28 @@
 
 ## Unreleased
 
+## 0.1.1 (prerelease, 2026-10-30)
+
+This fork preview includes upstream PRs [#1](https://github.com/barak14/fm-editor/pull/1)
+and [#2](https://github.com/barak14/fm-editor/pull/2), including the club-membership
+support required by Best XI. Upstream approval and merge are still pending.
+
+### Club filters and lineup planning
+
+- Add exact Club ID and My clubs player-search filters. My clubs includes the
+  managed club, related reserve/youth squads and owned players on loan.
+- Add Best XI with 4-1-2-2-1 selected by default, four other formations, adjustable
+  familiarity, unique whole-team assignment and three alternatives per position.
+- Add Room to grow ranking by remaining PA minus CA, with development traits
+  shown as context. This is growth capacity, not a forecast; FM24 development
+  research has not been verified for FM27.
+- Show a pitch on wide windows and stacked position cards on narrow windows;
+  player links and Back preserve lineup settings.
+- Use current club membership for Best XI, excluding away loans. Fitness,
+  injuries, suspensions and registration eligibility are not checked.
+- Verify read-only workflows against FM27 Steam/Huelva. Current-club membership
+  uses existing FM24/FM27 Steam mappings; FM26 and Game Pass are unavailable.
+
 ### Distribution
 
 - Add a per-user Windows installer with Start Menu/optional desktop shortcuts and uninstall support, plus an Arch/CachyOS `fm-editor-bin` package with declared dependencies and desktop/icon integration.
